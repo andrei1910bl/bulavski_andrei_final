@@ -1,17 +1,20 @@
 package com.example.demo.dto;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.time.LocalDate;
+import java.sql.Timestamp;
 
 @Data
+@AllArgsConstructor
 public class UserDTO {
     private Long id;
     private String username;
+    private String password;
     private String email;
-    private Integer phoneNumber;
-    private LocalDate createdAt;
+    private String phoneNumber;
+    private Timestamp createdAt;
 
 
 }

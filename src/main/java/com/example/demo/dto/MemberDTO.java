@@ -1,6 +1,5 @@
 package com.example.demo.dto;
 
-import com.example.demo.model.Community;
 import lombok.Data;
 
 import java.sql.Timestamp;
