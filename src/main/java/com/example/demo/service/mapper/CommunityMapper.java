@@ -1,7 +1,7 @@
 package com.example.demo.service.mapper;
 
 import com.example.demo.dto.CommunityDTO;
-import com.example.demo.repository.model.Community;
+import com.example.demo.repository.entity.Community;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

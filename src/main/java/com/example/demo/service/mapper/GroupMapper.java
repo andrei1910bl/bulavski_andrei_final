@@ -1,7 +1,7 @@
 package com.example.demo.service.mapper;
 
 import com.example.demo.dto.GroupDTO;
-import com.example.demo.repository.model.Group;
+import com.example.demo.repository.entity.Group;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

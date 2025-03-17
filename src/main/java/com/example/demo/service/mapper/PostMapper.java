@@ -1,7 +1,7 @@
 package com.example.demo.service.mapper;
 
 import com.example.demo.dto.PostDTO;
-import com.example.demo.repository.model.Post;
+import com.example.demo.repository.entity.Post;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -1,0 +1,108 @@
+CREATE TABLE users (
+    id BIGSERIAL PRIMARY KEY,
+    username VARCHAR(30) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    phone_number VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE profile (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    photo_url VARCHAR(255),
+    description TEXT,
+    age INTEGER CHECK (age >= 0),
+    user_id BIGINT NOT NULL UNIQUE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE role (
+    id SERIAL PRIMARY KEY,
+    role_name VARCHAR(30) UNIQUE NOT NULL
+);
+
+CREATE TABLE groups (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    photo_url VARCHAR(255)
+);
+
+CREATE TABLE user_role (
+    id BIGSERIAL PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    role_id BIGINT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (role_id) REFERENCES role(id) ON DELETE CASCADE
+);
+
+CREATE TABLE friend (
+    id BIGSERIAL PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    friend_id BIGINT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (friend_id) REFERENCES users(id) ON DELETE CASCADE
+    );
+
+CREATE TABLE community (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description VARCHAR(500),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    photo_url VARCHAR(255)
+);
+
+CREATE TABLE member (
+    id BIGSERIAL PRIMARY KEY,
+    community_id BIGINT NOT NULL,
+    user_id BIGINT NOT NULL,
+    joined_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    position VARCHAR(100),
+    FOREIGN KEY (community_id) REFERENCES community(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE chat (
+    id BIGSERIAL PRIMARY KEY,
+    first_user_id BIGINT NOT NULL,
+    second_user_id BIGINT NOT NULL,
+    FOREIGN KEY (first_user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (second_user_id) REFERENCES users(id) ON DELETE CASCADE
+    );
+
+CREATE TABLE message (
+    id BIGSERIAL PRIMARY KEY,
+    content TEXT NOT NULL,
+    sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    user_id BIGINT NOT NULL,
+    chat_id BIGINT,
+    group_id BIGINT,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (chat_id) REFERENCES chat(id) ON DELETE CASCADE
+    );
+
+CREATE TABLE group_user (
+    id BIGSERIAL PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    group_id BIGINT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (group_id) REFERENCES groups(id) ON DELETE CASCADE
+    );
+
+CREATE TABLE post (
+    id BIGSERIAL PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE publication (
+    id BIGSERIAL PRIMARY KEY,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    member_id BIGINT NOT NULL,
+    FOREIGN KEY (member_id) REFERENCES member(id) ON DELETE CASCADE
+);

@@ -15,9 +15,17 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration
 
 server:
   port: 8083
-jwt:
-  secret: 984hg493gh0439rthr0429uruj2309yh937gc763fe87t3f89723gf
-  lifetime: 30m
+
+logging:
+  level:
+    root: INFO
+  file:
+    name: logs/application.log
+    path: logs

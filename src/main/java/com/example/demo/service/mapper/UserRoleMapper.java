@@ -1,7 +1,7 @@
 package com.example.demo.service.mapper;
 
 import com.example.demo.dto.UserRoleDTO;
-import com.example.demo.repository.model.UserRole;
+import com.example.demo.repository.entity.UserRole;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -2,7 +2,7 @@ package com.example.demo.service.mapper;
 
 import com.example.demo.dto.RegistrationUserDTO;
 import com.example.demo.dto.UserDTO;
-import com.example.demo.repository.model.User;
+import com.example.demo.repository.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -16,4 +16,7 @@ public interface UserMapper {
     User toEntity(UserDTO userDTO);
 
     User toEntity(RegistrationUserDTO registrationUserDTO);
+
+
+
 }
