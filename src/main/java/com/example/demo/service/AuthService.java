@@ -11,18 +11,19 @@ import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Timestamp;
 import java.util.HashSet;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -33,6 +34,9 @@ public class AuthService {
 
     @Autowired
     private RoleRepository roleRepository;
+
+    @Autowired
+    private AuthenticationManager authenticationManager;
 
     private final PasswordEncoder passwordEncoder;
 
@@ -78,32 +82,14 @@ public class AuthService {
         return UserMapper.INSTANCE.toDTO(user);
     }
 
-    public UserDTO login(String identifier, String password) {
-        log.info("Попытка входа пользователя с идентификатором: {}", identifier);
-        Optional<User> userOpt = userRepository.findByUsername(identifier)
-                .or(() -> userRepository.findByEmail(identifier))
-                .or(() -> userRepository.findByPhoneNumber(identifier));
-
-        if (userOpt.isPresent() && passwordEncoder.matches(password, userOpt.get().getPassword())) {
-            log.info("Пользователь успешно вошел в систему: {}", identifier);
-
-            // Создаем объект Authentication
-            User user = userOpt.get();
-            Authentication authentication = new UsernamePasswordAuthenticationToken(
-                    user.getUsername(),
-                    null,
-                    user.getUserRoles().stream()
-                            .map(userRole -> new SimpleGrantedAuthority(userRole.getRole().getRoleName()))
-                            .collect(Collectors.toList())
-            );
-
-            // Сохраняем в SecurityContext
-            SecurityContextHolder.getContext().setAuthentication(authentication);
-
-            return UserMapper.INSTANCE.toDTO(user);
+    public UserDTO getCurrentUser() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication == null || !authentication.isAuthenticated() || authentication.getPrincipal() instanceof String) {
+            throw new IllegalStateException("Пользователь не аутентифицирован");
         }
-
-        log.warn("Ошибка входа для идентификатора: {}", identifier);
-        return null;
+        String username = authentication.getName();
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("Пользователь не найден"));
+        return UserMapper.INSTANCE.toDTO(user);
     }
 }
