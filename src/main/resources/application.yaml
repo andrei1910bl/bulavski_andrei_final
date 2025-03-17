@@ -8,7 +8,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     show-sql: true
     database: POSTGRESQL
     database-platform: org.hibernate.dialect.PostgreSQLDialect
@@ -26,6 +26,7 @@ server:
 logging:
   level:
     root: INFO
+    org.flywaydb: DEBUG
   file:
     name: logs/application.log
     path: logs

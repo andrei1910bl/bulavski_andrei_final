@@ -11,7 +11,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
 
 class AuthControllerTest {
@@ -39,34 +38,20 @@ class AuthControllerTest {
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(userDTO, response.getBody());
-        verify(authService).register(eq(userDTO));
+        verify(authService, times(1)).register(eq(userDTO));
     }
 
     @Test
-    void loginSuccessfully() {
-        String identifier = "test@example.com";
-        String password = "password";
+    void getCurrentUserSuccessfully() {
         UserDTO userDTO = new UserDTO();
+        userDTO.setEmail("currentuser@example.com");
 
-        when(authService.login(eq(identifier), eq(password))).thenReturn(userDTO);
+        when(authService.getCurrentUser()).thenReturn(userDTO);
 
-        ResponseEntity<UserDTO> response = authController.login(identifier, password);
+        ResponseEntity<UserDTO> response = authController.getCurrentUser();
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(userDTO, response.getBody());
-        verify(authService).login(eq(identifier), eq(password));
-    }
-
-    @Test
-    void loginUnauthorized() {
-        String identifier = "test@example.com";
-        String password = "wrongpassword";
-
-        when(authService.login(eq(identifier), eq(password))).thenReturn(null);
-
-        ResponseEntity<UserDTO> response = authController.login(identifier, password);
-
-        assertEquals(HttpStatus.UNAUTHORIZED, response.getStatusCode());
-        verify(authService).login(eq(identifier), eq(password));
+        verify(authService, times(1)).getCurrentUser();
     }
 }

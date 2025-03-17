@@ -19,9 +19,8 @@ public class AuthController {
         return ResponseEntity.ok(authService.register(userDTO));
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<UserDTO> login(@RequestParam String identifier, @RequestParam String password) {
-        UserDTO userDTO = authService.login(identifier, password);
-        return userDTO != null ? ResponseEntity.ok(userDTO) : ResponseEntity.status(401).build();
+    @GetMapping("/me")
+    public ResponseEntity<UserDTO> getCurrentUser() {
+        return ResponseEntity.ok(authService.getCurrentUser());
     }
 }
