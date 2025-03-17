@@ -1,1 +1,1 @@
-CREATE DATABASE socialnetwork_db;
+SET search_path TO public;
