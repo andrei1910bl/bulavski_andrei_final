@@ -8,7 +8,7 @@ INSERT INTO users (username, email, phone_number, password, created_at) VALUES
 
 INSERT INTO user_role (user_id, role_id) VALUES
 (1, 1),
-(2, 1);
+(2, 2);
 
 INSERT INTO profile (name, last_name, photo_url, description, age, user_id) VALUES
 ('Andrei', 'Bulavskiy', 'http://example.com/photo_andrei.jpg', 'Description for Andrei', 28, 1),

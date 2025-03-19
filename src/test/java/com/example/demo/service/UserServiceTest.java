@@ -2,14 +2,12 @@ package com.example.demo.service;
 
 import com.example.demo.dto.UserDTO;
 import com.example.demo.repository.UserRepository;
-import com.example.demo.repository.ProfileRepository;
 import com.example.demo.repository.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.Optional;
 
@@ -30,9 +28,8 @@ class UserServiceTest {
         MockitoAnnotations.openMocks(this);
     }
 
-
     @Test
-    void updateUser_ShouldReturnUpdatedUserDTO_WhenUserExists() {
+    void updateUserReturnsUpdatedDTO() {
         Long userId = 1L;
         UserDTO userDTO = new UserDTO();
         userDTO.setUsername("updatedUser");
@@ -54,7 +51,7 @@ class UserServiceTest {
     }
 
     @Test
-    void updateUser_ShouldReturnNull_WhenUserDoesNotExist() {
+    void updateUserReturnsNullIfNotFound() {
         Long userId = 1L;
         UserDTO userDTO = new UserDTO();
         userDTO.setUsername("updatedUser");
@@ -68,7 +65,7 @@ class UserServiceTest {
     }
 
     @Test
-    void deleteUser_ShouldCallDeleteById_WhenUserExists() {
+    void deleteUserCallsDelete() {
         Long userId = 1L;
 
         userService.deleteUser(userId);
@@ -77,7 +74,7 @@ class UserServiceTest {
     }
 
     @Test
-    void getUserById_ShouldReturnUserDTO_WhenUserExists() {
+    void getUserByIdReturnsDTOIfFound() {
         Long userId = 1L;
         User user = new User();
         user.setId(userId);
@@ -92,7 +89,7 @@ class UserServiceTest {
     }
 
     @Test
-    void getUserById_ShouldReturnNull_WhenUserDoesNotExist() {
+    void getUserByIdReturnsNullIfNotFound() {
         Long userId = 1L;
 
         when(userRepository.findById(userId)).thenReturn(Optional.empty());

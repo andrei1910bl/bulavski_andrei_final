@@ -23,17 +23,24 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findByUsername(username)
-                .orElseThrow(() -> new UsernameNotFoundException("Пользователь не найден"));
+                .orElseThrow(() -> new UsernameNotFoundException("Пользователь с именем " + username + " не найден"));
 
-        // Получаем роли пользователя из userRoles (уже загружены благодаря JOIN FETCH)
         var authorities = user.getUserRoles().stream()
-                .map(userRole -> new SimpleGrantedAuthority(userRole.getRole().getRoleName()))
+                .map(userRole -> {
+                    String roleName = userRole.getRole().getRoleName();
+                    return new SimpleGrantedAuthority(
+                            roleName.startsWith("ROLE_") ? roleName : "ROLE_" + roleName
+                    );
+                })
                 .collect(Collectors.toList());
 
-        // Возвращаем объект UserDetails
         return new org.springframework.security.core.userdetails.User(
                 user.getUsername(),
                 user.getPassword(),
+                true,  // enabled
+                true,  // accountNonExpired
+                true,  // credentialsNonExpired
+                true,  // accountNonLocked
                 authorities
         );
     }
