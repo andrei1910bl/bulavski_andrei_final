@@ -16,6 +16,7 @@ git clone https://github.com/andrei1910bl/bulavski_andrei_final
 ```
 
 Для запуска программы выполните команду:
+
 \```
 bash build.sh //for Mac/Linux
 \```
