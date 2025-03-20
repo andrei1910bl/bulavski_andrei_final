@@ -1,21 +1,21 @@
-2025-03-18T20:30:55.357+03:00  INFO 1179 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Starting SocialnetworkApplication using Java 23.0.1 with PID 1179 (/Users/macbookair/Documents/final/socialnetwork/target/classes started by macbookair in /Users/macbookair/Documents/final/socialnetwork)
-2025-03-18T20:30:55.363+03:00  INFO 1179 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : No active profile set, falling back to 1 default profile: "default"
-2025-03-18T20:30:55.773+03:00  INFO 1179 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-18T20:30:55.823+03:00  INFO 1179 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 12 JPA repository interfaces.
-2025-03-18T20:30:56.115+03:00  INFO 1179 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
-2025-03-18T20:30:56.123+03:00  INFO 1179 --- [socialnetwork] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-18T20:30:56.123+03:00  INFO 1179 --- [socialnetwork] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-18T20:30:56.147+03:00  INFO 1179 --- [socialnetwork] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-18T20:30:56.147+03:00  INFO 1179 --- [socialnetwork] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
-2025-03-18T20:30:56.224+03:00  INFO 1179 --- [socialnetwork] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-18T20:30:56.256+03:00  INFO 1179 --- [socialnetwork] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-03-18T20:30:56.272+03:00  INFO 1179 --- [socialnetwork] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-18T20:30:56.415+03:00  INFO 1179 --- [socialnetwork] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-18T20:30:56.429+03:00  INFO 1179 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-18T20:30:56.538+03:00  INFO 1179 --- [socialnetwork] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20c3b34b
-2025-03-18T20:30:56.538+03:00  INFO 1179 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-18T20:30:56.557+03:00  WARN 1179 --- [socialnetwork] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-03-18T20:30:56.567+03:00  INFO 1179 --- [socialnetwork] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-03-20T15:08:17.608+03:00  INFO 9596 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Starting SocialnetworkApplication v0.0.1-SNAPSHOT using Java 23.0.1 with PID 9596 (/Users/macbookair/Documents/final/socialnetwork/target/socialnetwork-0.0.1-SNAPSHOT.jar started by macbookair in /Users/macbookair/Documents/final/socialnetwork)
+2025-03-20T15:08:17.612+03:00  INFO 9596 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-20T15:08:18.082+03:00  INFO 9596 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20T15:08:18.133+03:00  INFO 9596 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 12 JPA repository interfaces.
+2025-03-20T15:08:18.443+03:00  INFO 9596 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-20T15:08:18.452+03:00  INFO 9596 --- [socialnetwork] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-20T15:08:18.453+03:00  INFO 9596 --- [socialnetwork] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20T15:08:18.467+03:00  INFO 9596 --- [socialnetwork] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-20T15:08:18.467+03:00  INFO 9596 --- [socialnetwork] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 815 ms
+2025-03-20T15:08:18.561+03:00  INFO 9596 --- [socialnetwork] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20T15:08:18.603+03:00  INFO 9596 --- [socialnetwork] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20T15:08:18.624+03:00  INFO 9596 --- [socialnetwork] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-20T15:08:18.771+03:00  INFO 9596 --- [socialnetwork] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20T15:08:18.788+03:00  INFO 9596 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-20T15:08:18.959+03:00  INFO 9596 --- [socialnetwork] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12f8682a
+2025-03-20T15:08:18.961+03:00  INFO 9596 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-20T15:08:19.000+03:00  WARN 9596 --- [socialnetwork] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20T15:08:19.011+03:00  INFO 9596 --- [socialnetwork] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -23,44 +23,36 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-03-18T20:30:57.154+03:00  INFO 1179 --- [socialnetwork] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-03-18T20:30:57.156+03:00  INFO 1179 --- [socialnetwork] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-18T20:30:57.295+03:00  INFO 1179 --- [socialnetwork] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-03-18T20:30:57.659+03:00  WARN 1179 --- [socialnetwork] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-18T20:30:57.673+03:00  INFO 1179 --- [socialnetwork] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-03-18T20:30:58.044+03:00  INFO 1179 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
-2025-03-18T20:30:58.050+03:00  INFO 1179 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Started SocialnetworkApplication in 2.975 seconds (process running for 3.235)
-2025-03-18T20:31:14.898+03:00  INFO 1179 --- [socialnetwork] [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-18T20:31:14.898+03:00  INFO 1179 --- [socialnetwork] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-18T20:31:14.899+03:00  INFO 1179 --- [socialnetwork] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-18T20:36:01.536+03:00  INFO 1179 --- [socialnetwork] [http-nio-8083-exec-2] com.example.demo.service.AuthService     : Регистрация пользователя: user12
-2025-03-18T20:36:01.656+03:00  INFO 1179 --- [socialnetwork] [http-nio-8083-exec-2] com.example.demo.service.AuthService     : Пользователь успешно зарегистрирован: user12
-2025-03-18T20:37:16.520+03:00  INFO 1179 --- [socialnetwork] [http-nio-8083-exec-7] com.example.demo.service.UserService     : Получение пользователя с ID: 3
-2025-03-18T20:37:21.051+03:00  INFO 1179 --- [socialnetwork] [http-nio-8083-exec-8] com.example.demo.service.UserService     : Получение пользователя с ID: 2
-2025-03-18T20:37:24.634+03:00  INFO 1179 --- [socialnetwork] [http-nio-8083-exec-9] com.example.demo.service.UserService     : Получение пользователя с ID: 1
-2025-03-18T20:39:52.162+03:00  INFO 1179 --- [socialnetwork] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-18T20:39:52.165+03:00  INFO 1179 --- [socialnetwork] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-18T20:39:52.177+03:00  INFO 1179 --- [socialnetwork] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-03-18T20:39:52.186+03:00  INFO 1179 --- [socialnetwork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-18T20:39:52.189+03:00  INFO 1179 --- [socialnetwork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-03-18T21:02:16.071+03:00  INFO 1692 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Starting SocialnetworkApplication using Java 23.0.1 with PID 1692 (/Users/macbookair/Documents/final/socialnetwork/target/classes started by macbookair in /Users/macbookair/Documents/final/socialnetwork)
-2025-03-18T21:02:16.072+03:00  INFO 1692 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : No active profile set, falling back to 1 default profile: "default"
-2025-03-18T21:02:16.440+03:00  INFO 1692 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-18T21:02:16.489+03:00  INFO 1692 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 12 JPA repository interfaces.
-2025-03-18T21:02:16.763+03:00  INFO 1692 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
-2025-03-18T21:02:16.771+03:00  INFO 1692 --- [socialnetwork] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-18T21:02:16.771+03:00  INFO 1692 --- [socialnetwork] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-18T21:02:16.795+03:00  INFO 1692 --- [socialnetwork] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-18T21:02:16.795+03:00  INFO 1692 --- [socialnetwork] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 693 ms
-2025-03-18T21:02:16.869+03:00  INFO 1692 --- [socialnetwork] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-18T21:02:16.897+03:00  INFO 1692 --- [socialnetwork] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-03-18T21:02:16.910+03:00  INFO 1692 --- [socialnetwork] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-18T21:02:17.042+03:00  INFO 1692 --- [socialnetwork] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-18T21:02:17.056+03:00  INFO 1692 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-18T21:02:17.172+03:00  INFO 1692 --- [socialnetwork] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c226095
-2025-03-18T21:02:17.173+03:00  INFO 1692 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-18T21:02:17.188+03:00  WARN 1692 --- [socialnetwork] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-03-18T21:02:17.199+03:00  INFO 1692 --- [socialnetwork] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-03-20T15:08:19.630+03:00  INFO 9596 --- [socialnetwork] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20T15:08:19.631+03:00  INFO 9596 --- [socialnetwork] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20T15:08:19.838+03:00  INFO 9596 --- [socialnetwork] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20T15:08:20.165+03:00  WARN 9596 --- [socialnetwork] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20T15:08:20.183+03:00  INFO 9596 --- [socialnetwork] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-03-20T15:08:20.634+03:00  INFO 9596 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-20T15:08:20.642+03:00  INFO 9596 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Started SocialnetworkApplication in 3.312 seconds (process running for 3.603)
+2025-03-20T15:09:13.668+03:00  INFO 9596 --- [socialnetwork] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20T15:09:13.678+03:00  INFO 9596 --- [socialnetwork] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-20T15:09:13.685+03:00  INFO 9596 --- [socialnetwork] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20T15:09:13.687+03:00  INFO 9596 --- [socialnetwork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-20T15:09:13.689+03:00  INFO 9596 --- [socialnetwork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-20T15:16:44.009+03:00  INFO 9720 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Starting SocialnetworkApplication v0.0.1-SNAPSHOT using Java 23.0.1 with PID 9720 (/Users/macbookair/Documents/final/socialnetwork/target/socialnetwork-0.0.1-SNAPSHOT.jar started by macbookair in /Users/macbookair/Documents/final/socialnetwork)
+2025-03-20T15:16:44.011+03:00  INFO 9720 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-03-20T15:16:44.413+03:00  INFO 9720 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20T15:16:44.465+03:00  INFO 9720 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 12 JPA repository interfaces.
+2025-03-20T15:16:44.756+03:00  INFO 9720 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-20T15:16:44.764+03:00  INFO 9720 --- [socialnetwork] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-20T15:16:44.764+03:00  INFO 9720 --- [socialnetwork] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20T15:16:44.778+03:00  INFO 9720 --- [socialnetwork] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-20T15:16:44.778+03:00  INFO 9720 --- [socialnetwork] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2025-03-20T15:16:44.859+03:00  INFO 9720 --- [socialnetwork] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20T15:16:44.895+03:00  INFO 9720 --- [socialnetwork] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20T15:16:44.913+03:00  INFO 9720 --- [socialnetwork] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-20T15:16:45.062+03:00  INFO 9720 --- [socialnetwork] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20T15:16:45.080+03:00  INFO 9720 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-20T15:16:45.216+03:00  INFO 9720 --- [socialnetwork] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@693f2c89
+2025-03-20T15:16:45.218+03:00  INFO 9720 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-20T15:16:45.234+03:00  WARN 9720 --- [socialnetwork] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20T15:16:45.245+03:00  INFO 9720 --- [socialnetwork] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -68,62 +60,13 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-03-18T21:02:17.758+03:00  INFO 1692 --- [socialnetwork] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-03-18T21:02:17.760+03:00  INFO 1692 --- [socialnetwork] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-18T21:02:17.894+03:00  INFO 1692 --- [socialnetwork] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-03-18T21:02:18.254+03:00  WARN 1692 --- [socialnetwork] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-18T21:02:18.267+03:00  INFO 1692 --- [socialnetwork] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-03-18T21:02:18.657+03:00  INFO 1692 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
-2025-03-18T21:02:18.663+03:00  INFO 1692 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Started SocialnetworkApplication in 2.9 seconds (process running for 3.148)
-2025-03-18T21:02:22.262+03:00  INFO 1692 --- [socialnetwork] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-18T21:02:22.263+03:00  INFO 1692 --- [socialnetwork] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-18T21:02:22.264+03:00  INFO 1692 --- [socialnetwork] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-18T21:16:11.484+03:00  WARN 1692 --- [socialnetwork] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m54s189ms).
-2025-03-18T21:20:03.366+03:00  WARN 1692 --- [socialnetwork] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m51s882ms).
-2025-03-18T21:20:20.137+03:00  INFO 1692 --- [socialnetwork] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-18T21:20:20.139+03:00  INFO 1692 --- [socialnetwork] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-18T21:20:20.143+03:00  INFO 1692 --- [socialnetwork] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-03-18T21:20:20.144+03:00  INFO 1692 --- [socialnetwork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-18T21:20:20.146+03:00  INFO 1692 --- [socialnetwork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-03-18T21:46:44.171+03:00  INFO 2373 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Starting SocialnetworkApplication v0.0.1-SNAPSHOT using Java 23.0.1 with PID 2373 (/Users/macbookair/Documents/final/socialnetwork/target/socialnetwork-0.0.1-SNAPSHOT.jar started by macbookair in /Users/macbookair/Documents/final/socialnetwork)
-2025-03-18T21:46:44.174+03:00  INFO 2373 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : No active profile set, falling back to 1 default profile: "default"
-2025-03-18T21:46:44.536+03:00  INFO 2373 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-18T21:46:44.578+03:00  INFO 2373 --- [socialnetwork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 12 JPA repository interfaces.
-2025-03-18T21:46:44.852+03:00  INFO 2373 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
-2025-03-18T21:46:44.860+03:00  INFO 2373 --- [socialnetwork] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-18T21:46:44.861+03:00  INFO 2373 --- [socialnetwork] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-18T21:46:44.876+03:00  INFO 2373 --- [socialnetwork] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-18T21:46:44.876+03:00  INFO 2373 --- [socialnetwork] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 673 ms
-2025-03-18T21:46:44.961+03:00  INFO 2373 --- [socialnetwork] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-18T21:46:44.995+03:00  INFO 2373 --- [socialnetwork] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-03-18T21:46:45.017+03:00  INFO 2373 --- [socialnetwork] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-18T21:46:45.179+03:00  INFO 2373 --- [socialnetwork] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-18T21:46:45.197+03:00  INFO 2373 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-18T21:46:45.338+03:00  INFO 2373 --- [socialnetwork] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@208f7165
-2025-03-18T21:46:45.339+03:00  INFO 2373 --- [socialnetwork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-18T21:46:45.358+03:00  WARN 2373 --- [socialnetwork] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-03-18T21:46:45.368+03:00  INFO 2373 --- [socialnetwork] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-03-18T21:46:46.016+03:00  INFO 2373 --- [socialnetwork] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-03-18T21:46:46.018+03:00  INFO 2373 --- [socialnetwork] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-18T21:46:46.206+03:00  INFO 2373 --- [socialnetwork] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-03-18T21:46:46.563+03:00  WARN 2373 --- [socialnetwork] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-18T21:46:46.582+03:00  INFO 2373 --- [socialnetwork] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-03-18T21:46:46.992+03:00  INFO 2373 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
-2025-03-18T21:46:46.997+03:00  INFO 2373 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Started SocialnetworkApplication in 3.066 seconds (process running for 3.336)
-2025-03-18T21:46:57.280+03:00  INFO 2373 --- [socialnetwork] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-18T21:46:57.280+03:00  INFO 2373 --- [socialnetwork] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-18T21:46:57.281+03:00  INFO 2373 --- [socialnetwork] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-18T21:48:09.481+03:00  WARN 2373 --- [socialnetwork] [http-nio-8083-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2025-03-18T21:48:14.704+03:00  INFO 2373 --- [socialnetwork] [http-nio-8083-exec-8] com.example.demo.service.UserService     : Получение пользователя с ID: 2
-2025-03-18T21:49:40.572+03:00  INFO 2373 --- [socialnetwork] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-18T21:49:40.577+03:00  INFO 2373 --- [socialnetwork] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-18T21:49:40.584+03:00  INFO 2373 --- [socialnetwork] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-03-18T21:49:40.587+03:00  INFO 2373 --- [socialnetwork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-18T21:49:40.589+03:00  INFO 2373 --- [socialnetwork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-20T15:16:45.878+03:00  INFO 9720 --- [socialnetwork] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20T15:16:45.880+03:00  INFO 9720 --- [socialnetwork] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20T15:16:46.084+03:00  INFO 9720 --- [socialnetwork] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20T15:16:46.443+03:00  WARN 9720 --- [socialnetwork] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20T15:16:46.460+03:00  INFO 9720 --- [socialnetwork] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-03-20T15:16:46.887+03:00  INFO 9720 --- [socialnetwork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-20T15:16:46.892+03:00  INFO 9720 --- [socialnetwork] [main] c.example.demo.SocialnetworkApplication  : Started SocialnetworkApplication in 3.134 seconds (process running for 3.397)
+2025-03-20T15:18:14.429+03:00  INFO 9720 --- [socialnetwork] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20T15:18:14.430+03:00  INFO 9720 --- [socialnetwork] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-20T15:18:14.431+03:00  INFO 9720 --- [socialnetwork] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
